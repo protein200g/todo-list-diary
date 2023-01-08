@@ -1,0 +1,185 @@
+.hidden {
+  display: none;
+}
+
+.cancle{
+  text-decoration: line-through;
+  text-decoration-color: rgba(255, 0, 0,0.8);
+  text-decoration-thickness: 2px;
+  opacity: 0.5;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+
+}
+
+.bg{
+  width : 1450px;
+  height: 950px;
+  position: relative;
+}
+
+.bg::before{
+  width : 1450px;
+  height:950px;
+  display:flex;
+  content: "";
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-image: url('../img/0.jpg');
+  background-size: cover;
+  background-position: -250px 0px;
+  opacity: 0.8;
+  position: absolute;
+  z-index: -1;
+}
+
+.todo-bg{
+  width: 500px;
+  height: 600px;
+  background-color: rgba(0, 0, 0,0.4);
+  position: absolute;
+  border-radius: 50px;
+  right:2%;
+  bottom: 3%;
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.todo-bg:after {
+  border-top:50px solid rgba(0, 0, 0,0.4);
+  border-left: 50px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  content:"";
+  position:absolute;
+  top:50px;
+  left:-50px;
+ }
+
+
+
+li{
+  list-style:none;
+}
+
+ #todo-list{
+  display: flex;
+  flex-direction: column;
+  font-family: 'East Sea Dokdo', cursive;
+  font-size:30px;
+}
+
+#todo-list button{
+  float:right;
+  margin-right: 10px;
+}
+.fa-solid{
+  font-size: 25px;
+  border-color: transparent;
+  background-color: transparent; 
+  top:30%;
+  right:
+}
+
+.todays{
+  position: absolute;
+  margin: 1px;
+  border-bottom: 3px solid red;
+  left: 5%;
+  top: 2%;
+  font-size:40px;
+  font-family: 'East Sea Dokdo', cursive;
+}
+
+#todo-form input {
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  outline-style: none;
+  border: none;
+  padding-left: 10px;
+  margin-left: 20px;
+  margin-top: 80px;
+  margin-bottom:10px;
+  display: flex;
+  font-size: 20px;
+}
+
+.clicked{
+  color:rgba(255, 0, 0,0.8);
+}
+
+#greeting{
+  position: absolute;
+  left:25%;
+  top:0%;
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 70px;
+}
+
+#quote{
+  width: 700px;
+  height: 100px;
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+}
+
+#clock{
+  position: absolute;
+  right: 15%;
+  font-size: 50px;
+  font-family: 'East Sea Dokdo', cursive;
+}
+
+#weather{
+  position: absolute;
+  right: 5%;
+  top:15%;
+  font-size: 50px;
+  font-family: 'Nanum Brush Script', cursive;
+}
+
+
+#login-form{
+  width: 700px;
+  position: absolute;
+  left:7%;
+}
+
+#login-form input:first-child{
+  width: 70%;
+  height: 40px;
+  border-radius: 10px;
+  outline-style: none;
+  border: none;
+  padding-left: 10px;
+  margin-left: 20px;
+  margin-top: 80px;
+  margin-bottom:10px;
+  font-size: 20px;
+}
+#login-form input:last-child{
+  width: 20%;
+  height: 40px;
+  border-radius: 10px;
+  outline-style: none;
+  border: none;
+  padding-left: 10px;
+  margin-left: 20px;
+  margin-top: 80px;
+  margin-bottom:10px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.4);
+}
